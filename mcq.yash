@@ -15,11 +15,16 @@ do
      array -s r $i $tmp
 done
 
+clear
+echo "  m酱专用随机选择题选项生成器"
+echo "    ver 0.1"
+echo "-----------------------------"
+echo
 echo -e -n "打乱前\t"
 echo "${s[*]}"
 echo -e -n "打乱后\t"
 echo "${r[*]}"
-echo -e -n "正确选项\t"
+echo -e -n "答案\t"
 rand=$(od -N 2 -t uL -An /dev/urandom | tr -d " ")
 choice=$(( 1 + rand % 4 ))
 # echo $choice

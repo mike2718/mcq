@@ -1,0 +1,27 @@
+#!/usr/bin/yash
+
+array s "A" "B" "C" "D"
+array r "A" "B" "C" "D"
+
+for i in 4 3 2 1
+do
+    # 成成一个j,使得1 ≤ j ≤ i
+     rand=$(od -N 2 -t uL -An /dev/urandom | tr -d " ")
+     j=$(( $rand % i + 1 ))
+     #echo $j
+     # 交换r[i]和r[j]
+     tmp=${r[j]}
+     array -s r $j ${r[i]}
+     array -s r $i $tmp
+done
+
+echo -e -n "打乱前\t"
+echo "${s[*]}"
+echo -e -n "打乱后\t"
+echo "${r[*]}"
+echo -e -n "正确选项\t"
+rand=$(od -N 2 -t uL -An /dev/urandom | tr -d " ")
+choice=$(( 1 + rand % 4 ))
+# echo $choice
+echo ${s[$choice]}
+echo

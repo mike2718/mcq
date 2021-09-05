@@ -26,8 +26,8 @@ echo -e -n "打乱前\t"
 echo "A" "B" "C" "D"
 echo -e -n "打乱后\t"
 echo "${r[@]}"
-echo -e -n "答案\t"
-choice=$(head /dev/urandom | tr -dc A-D | head -c1)
-echo "$choice"
+#echo -e -n "答案\t"
+#choice=$(head /dev/urandom | tr -dc A-D | head -c1)
+#echo "$choice"
 echo
 

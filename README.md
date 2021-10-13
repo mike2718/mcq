@@ -5,22 +5,20 @@
 ## 执行例子
 
 ```
-$ yash mcq.yash
-```
+$ ./mcq.yash
 
-```
 -------------------------------
      随机选择题选项生成器
-           ver 0.1
+           ver 0.2
 -------------------------------
 
-打乱前  A B C D
-打乱后  C A B D
-答案    A
+打乱前  A    B    C    D
+打乱后  B    C    D    A
+
 
 ```
 
 ## 依赖
 
-- [yash](https://yash.osdn.jp/index.html)
+- [Zsh](https://www.zsh.org/)
 

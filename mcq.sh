@@ -1,5 +1,6 @@
 #!/usr/bin/zsh
 #
+clear
 printf "\n-------------------------------\n"
 printf "     随机选择题选项生成器\n"
 printf "           ver 0.2\n"

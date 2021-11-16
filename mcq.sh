@@ -1,10 +1,8 @@
 #!/usr/bin/zsh
 #
 clear
-printf "\n"
-printf "     随机选择题选项生成器\n"
-printf "           ver 0.2\n"
-printf "\n\n"
+printf "\n     随机选择题选项生成器\n"
+printf "     ver 1.0\n\n"
 r=(A B C D)
 printf "打乱前\t"
 printf '%c' "${r[@]}"

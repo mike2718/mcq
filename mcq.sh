@@ -20,5 +20,5 @@ for i in 4 3 2 1; do
 done
 printf "打乱后\t"
 printf "%c" "${r[@]}"
-printf "\n"
+printf "\n\n"
 

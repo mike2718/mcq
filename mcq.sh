@@ -1,12 +1,11 @@
 #!/usr/bin/zsh
-#
 clear
-printf "\n     随机选择题选项生成器\n"
-printf "     ver 1.0\n\n"
+printf "\t随机选择题选项生成器\n\n"
 r=(A B C D)
 printf "打乱前\t"
 printf '%c' "${r[@]}"
 printf "\n"
+printf "\t↓↓↓↓\n"
 for i in 4 3 2 1; do
      # 生成一个j,使得1 ≤ j ≤ i
      j="$(head /dev/random | tr -dc 1-4 | head -c1)"
@@ -21,4 +20,5 @@ for i in 4 3 2 1; do
 done
 printf "打乱后\t"
 printf "%c" "${r[@]}"
-printf "\n\n"
+printf "\n"
+

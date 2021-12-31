@@ -1,8 +1,7 @@
 #!/usr/bin/bash
 clear
-printf "\t随机选择题选项生成器\n\n"
+printf "\n\t随机选择题选项生成器\n\n"
 r=(A B C D)
-#printf "\t↓↓↓↓\n"
 printf "范围\t摇到的数组下标\t划掉的字母\t结果\n"
 printf "\t\t\t"
 printf '%c ' "${r[@]}"
@@ -19,8 +18,8 @@ for i in 3 2 1; do # 1 <= i <= 4 - 1
      r[j]="${r[i]}"
      r[i]="${tmp}"
      printf '%c\t\t' "${j}"
-     printf '%b\t\t' "\033[1m"${r[j]}"\033[0m"
-     printf '%b\n' "\033[1m"${r[i]}"\033[0m"
+     printf '%b\t\t' "\033[1m""${r[j]}""\033[0m"
+     printf '%b\n' "\033[1m""${r[i]}""\033[0m"
 done
 echo
 printf "打乱后的序列："
